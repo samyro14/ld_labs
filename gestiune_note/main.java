@@ -117,18 +117,9 @@ class Student{
         sb.append(nume_student);
         sb.append("\n");
         for(int i = 0; i < size_courses; i++){
-            sb.append(courses[i]);
-            sb.append("\n");
-            sb.append("Nota: ");
-            sb.append(grades[i]);
-            sb.append("\n");
+            sb.append(courses[i] + "\n" + "Nota: " + grades[i] + "\n");
         }
-        sb.append("Credite total: ");
-        sb.append(getCrediteTotal());
-        sb.append("\n");
-        sb.append("Mean: ");
-        sb.append(getMean());
-        sb.append("\n");
+        sb.append("Credite total: " + getCrediteTotal() + "\n" + "Mean: " + getMean() + "\n");
         return sb.toString();
     }
 
